@@ -24,7 +24,12 @@ import ujson as json
 from time import time
 
 class TweetAggregator():
-    """Perform an aggregation of tweets and save as valid json files."""
+    """Perform an aggregation of tweets and save as valid json files.
+
+    @input_file (ndjson): Newline delimited json file with one tweet per object
+    @output_dir: Directory to save the output
+    @filter (str): The json field to aggregate the records on
+    """
 
     def __init__(self,
                  input_file,
