@@ -65,6 +65,7 @@ class TwitterPreprocessor():
         """Initialize the TwitterPreprocessor object."""
         timer = Timer()
         self.nlp = spacy.load(language_model)
+        self.build_pipeline()
         self.nlp.tokenizer = self.create_tokenizer()
         self.customize_lemmas()
         if stoplist_file is not None:
