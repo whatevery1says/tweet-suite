@@ -20,3 +20,7 @@ pip install nest_asyncio
 ## Preprocessor
 
 The Preprocessor is a script that loads the Twint output and performs a variant of the WE1S preprocessing pipeline on the text of the tweets. The result is saved in a new `tidy_tweet` field. The preprocessing algorithm is described at the beginning of the notebook. The Preprocessor comes with a stoplist, which is a variant of the standard WE1S stoplist.
+
+## Aggregator
+
+The Preprocessor is a script that aggregates tweets by specific criteria into single documents. The purposes is to build larger documents which form more coherent topic models than if the tweets were modelled individually.
